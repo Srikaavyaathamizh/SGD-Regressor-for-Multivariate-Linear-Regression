@@ -39,28 +39,36 @@ df['target']=data.target
 print(df.head())
 */
 ```
+## output
+
 ![Screenshot 2024-09-04 134115](https://github.com/user-attachments/assets/7352d2cb-4077-432d-8a02-c2eef1ce7f57)
 
 ```
 df.info()
 ```
+## OUTPUT
 ![Screenshot 2024-09-11 132140](https://github.com/user-attachments/assets/a4aa89d1-f21b-4990-b961-ac45a03599b5)
 ```
 X=df.drop(columns=['AveOccup','target'])
 X.info()
 ```
+## OUTPUT
 ![Screenshot 2024-09-11 132230](https://github.com/user-attachments/assets/6ce45980-844a-4b00-9da8-6923f9ff54d2)
 
 ```
 Y=df[['AveOccup','target']]
 Y.info()
 ```
+
+##OUTPUT
+
 ![Screenshot 2024-09-11 132457](https://github.com/user-attachments/assets/9f7d87f0-8df1-4475-a5c5-0e49e85e51e6)
 
 ```
 X_train,X_test,Y_train,Y_test=train_test_split(X,Y,test_size=0.2,random_state=42)
 X.head()
 ```
+## OUTPUT
 ![Screenshot 2024-09-11 132603](https://github.com/user-attachments/assets/2592faf5-8e18-43a8-b077-a6756cb836a3)
 
 ```
@@ -72,6 +80,8 @@ X_test=scaler_X.transform(X_test)
 Y_train=scaler_Y.fit_transform(Y_train)
 Y_test=scaler_Y.transform(Y_test)
 ```
+
+## OUTPUT
 ![Screenshot 2024-09-11 132712](https://github.com/user-attachments/assets/aa070236-45a5-4d3e-a2f7-2e36cbc71559)
 ```
 sgd=SGDRegressor(max_iter=1000,tol=1e-3)
