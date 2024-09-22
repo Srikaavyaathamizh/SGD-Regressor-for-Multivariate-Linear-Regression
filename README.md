@@ -37,5 +37,7 @@ df['target']=data.target
 print(df.head())
 ``
 
+![Screenshot 2024-09-22 231927](https://github.com/user-attachments/assets/b689b6f3-e44b-4c59-8e3f-db438219f3ab)
+
 ## Result:
 Thus the program to implement the multivariate linear regression model for predicting the price of the house and number of occupants in the house with SGD regressor is written and verified using python programming.
